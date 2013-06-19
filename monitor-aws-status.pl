@@ -46,7 +46,6 @@ MAIN: {
     GetOptions(
         \%arg,
         'interval|i=i',
-        'channel|c=s',
         'debug|d+' => \$Debug,
         'help|h|?' => sub { die "usage" }) or die "usage";
     $ENV{LM_DEBUG} = 1 if $Debug;
